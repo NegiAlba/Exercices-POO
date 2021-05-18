@@ -2,7 +2,11 @@
 
 class User
 {
-    protected $firstName, $lastName, $email, $password, $phoneNumber;
+    protected $firstName;
+    protected $lastName;
+    protected $email;
+    protected $password;
+    protected $phoneNumber;
 
     public function __construct($newFirstName, $newLastName, $newEmail, $newPassword, $newPhoneNumber)
     {
@@ -21,7 +25,7 @@ class User
     // protected $firstName;
 
     /**
-     * Get the value of firstName
+     * Get the value of firstName.
      */
     public function getFirstName()
     {
@@ -29,9 +33,11 @@ class User
     }
 
     /**
-     * Set the value of firstName
+     * Set the value of firstName.
      *
-     * @return  self
+     * @param mixed $firstName
+     *
+     * @return self
      */
     public function setFirstName($firstName)
     {
@@ -39,7 +45,7 @@ class User
     }
 
     /**
-     * Get the value of lastName
+     * Get the value of lastName.
      */
     public function getLastName()
     {
@@ -47,9 +53,11 @@ class User
     }
 
     /**
-     * Set the value of lastName
+     * Set the value of lastName.
      *
-     * @return  self
+     * @param mixed $lastName
+     *
+     * @return self
      */
     public function setLastName($lastName)
     {
@@ -57,7 +65,7 @@ class User
     }
 
     /**
-     * Get the value of email
+     * Get the value of email.
      */
     public function getEmail()
     {
@@ -65,9 +73,11 @@ class User
     }
 
     /**
-     * Set the value of email
+     * Set the value of email.
      *
-     * @return  self
+     * @param mixed $email
+     *
+     * @return self
      */
     public function setEmail($email)
     {
@@ -75,7 +85,7 @@ class User
     }
 
     /**
-     * Get the value of password
+     * Get the value of password.
      */
     public function getPassword()
     {
@@ -83,9 +93,11 @@ class User
     }
 
     /**
-     * Set the value of password
+     * Set the value of password.
      *
-     * @return  self
+     * @param mixed $password
+     *
+     * @return self
      */
     public function setPassword($password)
     {
@@ -93,7 +105,7 @@ class User
     }
 
     /**
-     * Get the value of phoneNumber
+     * Get the value of phoneNumber.
      */
     public function getPhoneNumber()
     {
@@ -101,9 +113,11 @@ class User
     }
 
     /**
-     * Set the value of phoneNumber
+     * Set the value of phoneNumber.
      *
-     * @return  self
+     * @param mixed $phoneNumber
+     *
+     * @return self
      */
     public function setPhoneNumber($phoneNumber)
     {

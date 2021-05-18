@@ -3,9 +3,9 @@
 class Admin extends User
 {
     /**
-     * Nickname for Admin
+     * Nickname for Admin.
      *
-     * @var String
+     * @var string
      */
     private $nickname;
 
@@ -20,11 +20,10 @@ class Admin extends User
         $this->setNickname($newNickname);
     }
 
-
     /**
-     * Get nickname for Admin
+     * Get nickname for Admin.
      *
-     * @return  String
+     * @return string
      */
     public function getNickname()
     {
@@ -32,13 +31,13 @@ class Admin extends User
     }
 
     /**
-     * Set nickname for Admin
+     * Set nickname for Admin.
      *
-     * @param  String  $nickname  Nickname for Admin
+     * @param string $nickname Nickname for Admin
      *
-     * @return  self
+     * @return self
      */
-    public function setNickname(String $nickname)
+    public function setNickname(string $nickname)
     {
         $this->nickname = $nickname;
     }
@@ -47,6 +46,6 @@ class Admin extends User
     {
         echo " Je m'appelle {$this->getFullName()}, mon email est {$this->getEmail()} et mon numéro de téléphone est le {$this->getPhoneNumber()}";
         // parent::identify();
-        echo " Nous sommes admin sur ce site. Nous sommes anonymous, nous sommes légion.";
+        echo ' Nous sommes admin sur ce site. Nous sommes anonymous, nous sommes légion.';
     }
 }
